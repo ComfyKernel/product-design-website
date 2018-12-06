@@ -1,0 +1,234 @@
+:root {
+    --col-navbar        : #00000099;
+    --col-navbar-border : #CCC;
+}
+
+@font-face {
+    font-family : scribble;
+    src : url(../fonts/Scribble.ttf);
+    font-weight : normal;
+}
+
+body {
+    margin  : 0 0 0 0;
+    padding : 0 0 0 0;
+}
+
+#content-container {
+    background : url(../images/beach.jpg);
+    
+    height : 100%;
+    width  : 100%;
+    margin : 0 0 0 0;
+    position : absolute;
+    overflow-y : scroll;
+    
+    background-repeat : no-repeat;
+    background-size   : cover;
+    
+    padding : 0 0 0 0;
+	/*padding-left : 2in;
+    padding-right : 2in;*/
+}
+
+.fancy-text {
+    position    : fixed;
+    
+    font-family : scribble;
+    
+    top : 17pt;
+    
+    margin      : 0 0 0 0;
+    margin-left : 5pt;
+    
+    line-height : 5pt;
+    color       : #FFF;
+    
+    font-size   : 40pt;
+    font-weight : normal;
+    
+    text-decoration : none;
+    
+    z-index : 9999;
+}
+
+#navbar {
+    position : fixed;
+    top      : 0;
+    left     : 0;
+    
+    width  : 100%;
+    height : 30pt;
+    
+    background       : var(--col-navbar);
+    backdrop-filter          : blur(25px);
+    -webkit-backdrop-filter  : blur(25px);
+    
+    border-bottom-style : solid;
+    border-bottom-width : 1pt;
+    border-bottom-color : var(--col-navbar-border);
+    
+    z-index : 9998;
+}
+
+.navbar-button {
+    height : 30pt;
+    width  : 200pt;
+    
+    margin : 0 0 0 0;
+    
+    border-style  : none;
+    border-width  : 0;
+    border-radius : 0;
+    
+    display : inline-block;
+    
+    border-radius : 9999pt;
+
+    flex-grow  : 0;
+    flex-basis : 140pt;
+    
+    background : #00000000;
+    color      : #FFF;
+    
+    font-size   : 14pt;
+    text-align  : center;
+    font-family : arial, helvetica, sans-serif;   
+    font-weight : lighter !important;
+    
+    background-attachment : fixed;
+    /*background-size       : cover;*/
+}
+
+.navbar-button:hover {
+    transition-duration : 0.5s;
+    background : #00000044;
+}
+
+.navbar-button:active {
+    transition-duration : 0.5s;
+    
+    background : url('../images/beach.jpg');
+    background-attachment : fixed;
+    background-size : cover;
+}
+
+h1, h4 {
+    color : #FFF;
+    
+    margin : 0 0 0 0;
+    
+    text-shadow : 0pt 0pt 10pt #000;
+}
+
+h1 {
+    font-size   : 35pt;
+    font-family : arial, helvetica, sans-serif;
+    
+    font-weight : normal;
+    
+    margin-bottom : 12pt;
+    margin-top    : 7pt;
+    
+    text-align  : center;
+}
+
+h4 {
+    font-family : arial, helvetica, sans-serif;
+    
+    margin-top : 10pt;
+    
+    font-weight : normal;
+    
+    text-align : center;
+}
+
+hr[level="dark"] {
+    border-color  : #BBB;
+    border-style  : none;
+    border-width  : 0;
+    /*border-radius : 9999pt;*/
+    
+    border-top-color    : #BBB;
+    border-bottom-color : #BBB;
+    border-top-width    : 1pt;
+    border-bottom-width : 1pt;
+    border-top-style    : solid;
+    border-bottom-style : solid;
+    
+    z-index : 25;
+    
+    /*box-shadow : 0 0 2pt #000;*/
+    
+    height : 4pt;
+    background : #00000055;
+    
+    backdrop-filter : blur(25px);
+    
+    margin : 0 0 0 0;
+    
+    margin-left  : -1pt;
+    margin-right : -1pt;
+}
+
+#content {
+    width      : calc(100% - 4in);
+    min-height : 150%;
+    
+    margin       : 0 0 0 0;
+    margin-top   : 30pt;
+    margin-left : 2in;
+    
+    z-index  24;
+    
+    /*box-shadow : 0pt 0pt 4in #666;
+    
+    border-right-style : solid;
+    border-right-width : 1pt;
+    border-right-color : #999;
+    
+    border-left-style : solid;
+    border-left-width : 1pt;
+    border-left-color : #999;*/
+    
+    display : flex;
+    
+    /*background               : var(--col-navbar);
+    backdrop-filter          : blur(25px);
+    -webkit-backdrop-filter  : blur(25px);
+    
+    background-color : #FFFFFF55; */
+}
+
+.content_head {
+    width : calc(100% - 1in) !important;
+    margin-left : 0.5in;
+    
+    border-style  : solid;
+    border-width  : 1pt;
+    border-color  : #999;
+    border-radius : 8pt;
+    
+    margin-top : 0.5in;
+    
+    padding-top    : 0.125in;
+    padding-bottom : 0.125in;
+}
+
+#main_content {
+    border-right-style : solid;
+    border-right-width : 1pt;
+    border-right-color : #999;
+    
+    border-left-style : solid;
+    border-left-width : 1pt;
+    border-left-color : #999;
+    
+    flex-grow : 1;
+    
+    background               : var(--col-navbar);
+    backdrop-filter          : blur(50px);
+    -webkit-backdrop-filter  : blur(50px);
+    
+    background-color : #00000077;
+}
